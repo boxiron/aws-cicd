@@ -12,5 +12,10 @@ pipeline {
                 sh 'echo test'
             }
         }
+        stage('god is good'){
+            steps{
+                sh 'echo god is good'
+            }
+        }
     }
 }
