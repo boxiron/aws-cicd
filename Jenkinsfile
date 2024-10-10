@@ -2,9 +2,9 @@ pipeline {
     agent any 
 
     stages {
-        stage('build'){
+        stage('git checout'){
             steps{
-                sh 'echo build'
+                git branch: 'main', url: 'https://github.com/boxiron/aws-cicd.git'
             }
         }
         stage('test'){
