@@ -5,7 +5,7 @@ pipeline {
         BRANCH_NAME = 'main'
         GIT_URL = 'https://github.com/boxiron/aws-cicd.git'
         IMAGE_TAG = 'boxiron/aws-cicd'
-        IMAGE_VERSION = ${BUILD_NUMBER}
+        IMAGE_VERSION = $"{BUILD_NUMBER}"
     }
 
     stages {
